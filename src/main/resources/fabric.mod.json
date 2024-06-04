@@ -6,11 +6,11 @@
   "name": "Particle Physics Mod",
   "description": "An attempt by a meager physics student to bring particle physics to Minecraft!",
   "authors": [
-    "tantr"
+    "tantr13"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/tantr13/"
+    "homepage": "https://github.com/tantr13/Particle-Physics-Mod",
+    "sources": "https://github.com/tantr13/Particle-Physics-Mod"
   },
 
   "license": "MIT Licence",
