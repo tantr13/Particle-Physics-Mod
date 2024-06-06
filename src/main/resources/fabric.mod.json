@@ -18,11 +18,11 @@
 
   "environment": "*",
   "entrypoints": {
+    "client": [
+      "net.fabricmc.particle_physics.ParticlePhysicsClient"
+    ],
     "main": [
       "net.tantr.particle_physics.ParticlePhysics"
-    ],
-    "client": [
-      "net.tantr.particle_physics.ParticlePhysicsClient"
     ]
   },
   "mixins": [

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": {"model": "particle_physics:block/plastic_scintillator_cylinder_lit"},
+    "lit=true": {"model": "particle_physics:block/plastic_scintillator_cylinder_unlit"}
+  }
+}

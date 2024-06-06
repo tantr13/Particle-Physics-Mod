@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "particle_physics:block/plastic_scintillator_block"
+  }
+}
