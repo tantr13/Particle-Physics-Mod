@@ -1,0 +1,11 @@
+{
+  "item.particle_physics.pmt": "Photomultiplier Tube",
+  "item.particle_physics.plastic_scintillator": "Plastic Scintillator",
+  "item.particle_physics.laser_650nm":  "Laser (650 nm)",
+  "item.particle_physics.laser_530nm": "Laser (530 nm)",
+
+  "block.particle_physics.plastic_scintillator_block": "Plastic Scintillator (Block)",
+  "block.particle_physics.plastic_scintillator_cylinder": "Plastic Scintillator (Cylinder)",
+
+  "itemGroup.particle_physics.photonics": "Photonics"
+}
