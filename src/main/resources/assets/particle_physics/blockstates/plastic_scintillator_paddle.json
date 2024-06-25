@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,taped=false": {
+      "model": "particle_physics:block/plastic_scintillator_paddle"
+    },
+    "facing=north,taped=true": {
+      "model": "particle_physics:block/plastic_scintillator_paddle_taped"
+    },
+    "facing=south,taped=false": {
+      "model": "particle_physics:block/plastic_scintillator_paddle",
+      "y": 180
+    },
+    "facing=south,taped=true": {
+      "model": "particle_physics:block/plastic_scintillator_paddle_taped",
+      "y": 180
+    },
+    "facing=west,taped=false": {
+      "model": "particle_physics:block/plastic_scintillator_paddle",
+      "y": 270
+    },
+    "facing=west,taped=true": {
+      "model": "particle_physics:block/plastic_scintillator_paddle_taped",
+      "y": 270
+    },
+    "facing=east,taped=false": {
+      "model": "particle_physics:block/plastic_scintillator_paddle",
+      "y": 90
+    },
+    "facing=east,taped=true": {
+      "model": "particle_physics:block/plastic_scintillator_paddle_taped",
+      "y": 90
+    }
+  }
+}

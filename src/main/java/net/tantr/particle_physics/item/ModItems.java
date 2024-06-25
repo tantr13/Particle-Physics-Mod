@@ -8,6 +8,7 @@ import net.minecraft.util.registry.Registry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ItemGroup;
 import net.tantr.particle_physics.item.custom.LaserItem;
+import net.tantr.particle_physics.item.custom.TapeItem;
 
 
 public class ModItems {
@@ -23,6 +24,13 @@ public class ModItems {
 
     public static final Item LASER_650NM = registerItem("laser_650nm",
             new LaserItem(new FabricItemSettings().group(ModItemGroup.PHOTONICS)));
+
+    public static final Item TAPE = registerItem("tape",
+            new TapeItem(new FabricItemSettings().group(ModItemGroup.PHOTONICS)));
+
+
+
+
 
 
 

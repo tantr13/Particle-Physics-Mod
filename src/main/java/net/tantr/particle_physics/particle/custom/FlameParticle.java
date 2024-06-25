@@ -9,15 +9,15 @@ import net.minecraft.particle.DefaultParticleType;
 public class FlameParticle extends SpriteBillboardParticle {
 
     protected FlameParticle(ClientWorld level, double xCoord, double yCoord, double zCoord,
-                            SpriteProvider spriteSet, double xd, double yd, double zd) {
-        super(level, xCoord, yCoord, zCoord, spriteSet, xd, yd, zd);
+                              SpriteProvider spriteSet, double xd, double yd, double zd) {
+        super(level, xCoord, yCoord, zCoord, xd, yd, zd);
 
         this.velocityMultiplier = 0.6F;
         this.x = xd;
         this.y = yd;
         this.z = zd;
         this.scale *= 0.75F;
-        this.maxAge = 20;
+        this.maxAge = 20; // set
         this.setSpriteForAge(spriteSet);
 
         this.red = 1f;
@@ -28,7 +28,7 @@ public class FlameParticle extends SpriteBillboardParticle {
     @Override
     public void tick() {
         super.tick();
-        fadeOut();
+        fadeOut(); // maybe don't fade out? or only after it has hit a block!
     }
 
     private void fadeOut() {

@@ -3,8 +3,11 @@
   "item.particle_physics.plastic_scintillator": "Plastic Scintillator",
   "item.particle_physics.laser_650nm":  "Laser (650 nm)",
   "item.particle_physics.laser_530nm": "Laser (530 nm)",
+  "item.particle_physics.tape": "Duct Tape",
 
   "block.particle_physics.plastic_scintillator_block": "Plastic Scintillator (Block)",
+  "block.particle_physics.plastic_scintillator_paddle": "Plastic Scintillator Paddle",
+  "block.particle_physics.plastic_scintillator_paddle_tape": "Plastic Scintillator Paddle (Lightproof)",
   "block.particle_physics.plastic_scintillator_cylinder": "Plastic Scintillator (Cylinder)",
 
   "itemGroup.particle_physics.photonics": "Photonics"

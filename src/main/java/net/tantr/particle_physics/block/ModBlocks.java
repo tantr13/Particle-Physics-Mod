@@ -7,11 +7,11 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.tantr.particle_physics.ParticlePhysics;
 import net.tantr.particle_physics.block.custom.PlasticScintillatorCylinderBlock;
+import net.tantr.particle_physics.block.custom.PlasticScintillatorPaddleBlock;
 import net.tantr.particle_physics.item.ModItemGroup;
 
 public class ModBlocks {
@@ -24,6 +24,13 @@ public class ModBlocks {
             new PlasticScintillatorCylinderBlock(FabricBlockSettings.of(Material.GLASS)
                     .strength(4f).requiresTool().nonOpaque()
                     .luminance(state -> state.get(PlasticScintillatorCylinderBlock.LIT) ? 0 : 15)), ModItemGroup.PHOTONICS);
+
+    public static final Block PLASTIC_SCINTILLATOR_PADDLE = registerBlock("plastic_scintillator_paddle",
+            new PlasticScintillatorPaddleBlock((FabricBlockSettings.of(Material.STONE)
+                    .strength(4f).requiresTool().nonOpaque())), ModItemGroup.PHOTONICS);
+
+
+
 
 
 

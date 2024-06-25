@@ -1,5 +1,6 @@
 package net.tantr.particle_physics.item.custom;
 
+import com.mojang.authlib.yggdrasil.response.User;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,6 +25,16 @@ public class LaserItem extends Item {
     }
 
     @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        if (world.isClient()) {
+            spawnMyParticles(world, user);
+
+        }
+
+        return super.use(world, user, hand);
+    }
+
+    @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         if (context.getWorld().isClient()) {
             BlockPos positionClicked = context.getBlockPos();
@@ -32,6 +43,12 @@ public class LaserItem extends Item {
             spawnFoundParticles(context, positionClicked);
         }
         return super.useOnBlock(context);
+    }
+
+    private void spawnMyParticles(World world, PlayerEntity user) {
+        world.addParticle(ModParticles.GREEN_FLAME,
+                user.getX(), user.getEyeY(), user.getZ(),
+                user.getRotationVector().x, user.getRotationVector().y, user.getRotationVector().z);
     }
 
     private void spawnFoundParticles(ItemUsageContext pContext, BlockPos positionClicked) {

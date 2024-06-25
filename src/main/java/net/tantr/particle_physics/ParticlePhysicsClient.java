@@ -15,9 +15,7 @@ import net.tantr.particle_physics.particle.ModParticles;
 public class ParticlePhysicsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register(((atlasTexture, registry) -> {
-            registry.register(new Identifier(ParticlePhysics.MOD_ID, "particle/green_flame"));
-        }));
+
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PLASTIC_SCINTILLATOR_CYLINDER, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PLASTIC_SCINTILLATOR_BLOCK, RenderLayer.getTranslucent());
