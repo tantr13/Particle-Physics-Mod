@@ -50,7 +50,8 @@ public class PlasticScintillatorPaddleBlock extends HorizontalFacingBlock {
                               PlayerEntity player, Hand hand, BlockHitResult hit) {
         if(!world.isClient() && hand == Hand.MAIN_HAND && player.getMainHandStack().getItem() == ModItems.TAPE && !state.get(TAPED))  {
             world.playSound(null, pos, SoundEvents.BLOCK_ANVIL_USE, SoundCategory.BLOCKS, 0.5F, 0.5F);
-            world.setBlockState(pos, state.cycle(TAPED));
+            world.setBlockState(pos, state.cycle(TAPED).with(FACING,player.getHorizontalFacing()));
+
         }
 
         // add , ToolItem toolItem && toolItem.getName("ex");
